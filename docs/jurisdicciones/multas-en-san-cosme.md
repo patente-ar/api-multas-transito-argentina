@@ -65,10 +65,24 @@ La disponibilidad efectiva por API puede depender del contrato, la fuente activa
 - Rutas cercanas en Corrientes
 - Barrios y parajes vinculados a San Cosme
 
+## Probar San Cosme en Playground
+
+Para validar una consulta de multas en San Cosme, crea una cuenta, pedi habilitar la API `infracciones` y abri el Playground con una patente de prueba o un caso propio de integracion.
+
+- [Crear cuenta en patente.ar](https://patente.ar/registro)
+- [Pedir habilitacion de la API de multas](https://patente.ar/contacto?asunto=Habilitar%20API%20infracciones)
+- [Abrir Playground de APIs vehiculares](https://patente.ar/desarrolladores/api?tab=playground)
+
+El Playground muestra API keys, payloads, idempotencia, estado de procesamiento, webhooks y logs para acelerar el pase a produccion.
+
+
 ## Links
 
 - [Consulta web de multas en San Cosme](https://patente.ar/multas-en-san-cosme)
 - [API multas en patente.ar](https://patente.ar/api-multas)
+- [Crear cuenta](https://patente.ar/registro)
+- [Pedir habilitacion de API](https://patente.ar/contacto?asunto=Habilitar%20API%20infracciones)
+- [Playground API](https://patente.ar/desarrolladores/api?tab=playground)
 - [Indice de jurisdicciones](https://patente-ar.github.io/api-multas-transito-argentina/jurisdicciones/)
 - [OpenAPI](../../openapi/openapi.yaml)
 - [Repo GitHub](https://github.com/patente-ar/api-multas-transito-argentina)
