@@ -25,7 +25,7 @@ POST /v1/consultas HTTP/1.1
 Host: api.patente.ar
 Authorization: Bearer pa_live_xxx
 Content-Type: application/json
-Idempotency-Key: multas-multas-en-villa-de-soto-001
+Idempotency-Key: multas-en-villa-de-soto-demo-001
 x-token: orden-externa-001
 ```
 
