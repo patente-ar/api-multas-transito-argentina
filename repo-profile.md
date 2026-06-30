@@ -9,7 +9,7 @@
 - .gitignore: Node
 - License: MIT License
 - Homepage: https://patente.ar/api-multas
-- Description: Ejemplos de integracion para consultar multas de transito en Argentina con la API de patente.ar.
+- Description: API de multas de transito en Argentina con OpenAPI, webhooks, ejemplos y 109 jurisdicciones publicadas.
 
 ## Topics
 
@@ -36,7 +36,7 @@ api, argentina, multas, transito, patentes, webhooks, openapi, nodejs, python
 ```bash
 GH_TOKEN="$(security find-generic-password -a patente-ar -s codex-github:doc-apis-github -w)"
 gh repo edit patente-ar/api-multas-transito-argentina \
-  --description "Ejemplos de integracion para consultar multas de transito en Argentina con la API de patente.ar." \
+  --description "API de multas de transito en Argentina con OpenAPI, webhooks, ejemplos y 109 jurisdicciones publicadas." \
   --homepage "https://patente.ar/api-multas" \
   --enable-issues=true
 gh repo edit patente-ar/api-multas-transito-argentina --add-topic "api,argentina,multas,transito,patentes,webhooks,openapi,nodejs,python"
