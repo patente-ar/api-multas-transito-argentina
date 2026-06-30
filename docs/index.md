@@ -68,7 +68,7 @@ Los resultados asincronicos pueden recibirse por webhook firmado con HMAC SHA-25
 
 El repositorio lista las 109 jurisdicciones de multas publicadas en patente.ar para consulta por patente. La disponibilidad efectiva por API puede depender del contrato, la fuente activa y el estado operativo de cada organismo.
 
-<details>
+<details markdown="1">
 <summary>Ver las 109 jurisdicciones</summary>
 
 - [Alcira Gigena](https://patente.ar/multas-en-alcira-gigena)
