@@ -6,9 +6,23 @@ permalink: /jurisdicciones/multas-en-lujan/
 
 # API multas en Luján por patente
 
-Integra consulta de multas de transito en Luján dentro de sistemas propios usando la API de patente.ar, el endpoint unico `POST /v1/consultas`, API key del producto `infracciones`, idempotencia y webhook de resultado.
+Consultá tus multas de tránsito en Luján por patente y revisá qué organismo interviene, cómo pagar y dónde presentar un descargo.
 
-Esta pagina forma parte del repo publico [api-multas-transito-argentina](https://github.com/patente-ar/api-multas-transito-argentina) y funciona como documentacion tecnica para la jurisdiccion `multas-en-lujan`.
+Esta pagina forma parte del repo publico [api-multas-transito-argentina](https://github.com/patente-ar/api-multas-transito-argentina) y funciona como documentacion tecnica para la jurisdiccion `multas-en-lujan`. La API usa el endpoint unico `POST /v1/consultas`, API key del producto `infracciones`, idempotencia y webhook de resultado. Referencia interna de cobertura: `infracciones-lujan`.
+
+## Resumen local
+
+Consultá multas de tránsito en Luján por patente. Datos de organismo local, pago, descargos y rutas/SINAI con fuentes oficiales.
+
+| Dato | Valor |
+| --- | --- |
+| Jurisdiccion | Luján |
+| Pagina publica | [patente.ar/multas-en-lujan](https://patente.ar/multas-en-lujan) |
+| Slug publico | multas-en-lujan |
+| Referencia de integracion | infracciones-lujan |
+| Ultima actualizacion | 2026-05-20 |
+| Organismo o fuente | Juzgado de Faltas Municipal de Luján |
+| Host oficial | lujan.gob.ar |
 
 ## Endpoint API
 
@@ -45,9 +59,105 @@ x-token: orden-externa-001
 - Canales oficiales de pago o atención publicados por la jurisdicción
 - Diferencia entre actas municipales y controles provinciales o nacionales
 
-- Organismo o fuente informativa: Juzgado de Faltas Municipal de Luján
-
 La disponibilidad efectiva por API puede depender del contrato, la fuente activa, el estado operativo del organismo y el flujo asincronico configurado para la cuenta.
+
+
+## Fuente local y canales oficiales
+
+- Organismo o fuente informativa: Juzgado de Faltas Municipal de Luján
+- Direccion publicada: Italia 750, Luján, Buenos Aires
+- Horario publicado: Atención municipal en días hábiles; consultar canales vigentes en lujan.gob.ar
+- Telefono o canal publicado: 2323 44-1900
+- Sitio oficial: [lujan.gob.ar](https://www.lujan.gob.ar/impuestos_tasas.php)
+
+
+## Contexto del organismo
+
+El Juzgado de Faltas Municipal de Luján atiende infracciones de tránsito locales. El municipio publica accesos para impuestos, tasas, estacionamiento e iTrámites, que sirven como canales oficiales para iniciar o consultar gestiones municipales.
+
+
+## Pago online
+
+Luján publica accesos oficiales a impuestos, tasas, estacionamiento e iTrámites. Si la infracción pertenece a rutas nacionales o provinciales, seguí el portal indicado por la autoridad emisora o SINAI.
+
+
+## Pago presencial
+
+Podés gestionar actas municipales ante el Juzgado de Faltas Municipal de Luján o por los canales de atención publicados por el municipio. Llevá dominio, DNI y número de acta.
+
+
+## Pago voluntario o descuento
+
+El pago voluntario depende de lo indicado en el acta o liquidación municipal. Si existe descuento, debe figurar junto con el vencimiento de la infracción.
+
+
+## Descargo
+
+Si considerás que una multa en Luján fue mal labrada o tenés documentación para impugnarla, presentá el descargo por el canal oficial de Juzgado de Faltas Municipal de Luján. Antes de iniciar el trámite, consultá la patente en Patente.ar para ubicar las actas disponibles.
+
+
+## Pasos de descargo
+
+- **Identificá el acta:** Reuní número de acta, dominio, fecha de infracción y organismo emisor.
+- **Prepará la documentación:** Tené a mano DNI, licencia, cédula o título del vehículo y la prueba que respalde tu presentación.
+- **Presentá el descargo:** Usá el canal oficial de Juzgado de Faltas Municipal de Luján o el que indique la notificación recibida.
+- **Seguimiento:** Guardá constancia de la presentación y consultá el estado por el número de expediente o acta.
+
+
+## Plazos
+
+Los plazos para pagar, adherir a pago voluntario o presentar descargo dependen de la notificación y de la normativa aplicable a la autoridad que emitió el acta. Para Luján, usá siempre el plazo que figure en el acta o liquidación oficial.
+
+
+## Plazos operativos
+
+- **Pago voluntario:** Si la autoridad lo habilita, el vencimiento y descuento aparecen en la liquidación oficial.
+- **Descargo:** El plazo corre desde la notificación del acta o desde la fecha indicada por el organismo emisor.
+- **Prescripción:** La prescripción depende del tipo de falta y de la normativa nacional, provincial o municipal aplicable.
+
+
+## Rutas, controles y SINAI
+
+Si la infracción fue labrada en rutas nacionales, provinciales o por una autoridad distinta a Juzgado de Faltas Municipal de Luján, puede no tramitarse por el canal municipal. En esos casos conviene consultar el sistema SINAI o el organismo emisor que figura en el acta. Referencia nacional: [SINAI](https://consultainfracciones.seguridadvial.gob.ar).
+
+
+## Controles frecuentes
+
+- Foto-radares
+- Exceso de velocidad en rutas
+- Controles provinciales
+
+
+## Valores orientativos publicados
+
+| Infraccion | Rango UF |
+| --- | --- |
+| Estacionamiento en lugar prohibido | 50 a 200 UF |
+| Exceso de velocidad | 100 a 500 UF |
+| No respetar semáforo en rojo | 200 a 1000 UF |
+| Alcoholemia positiva | 500 a 2000 UF |
+| Conducir sin licencia | 300 a 1500 UF |
+
+
+## Compra venta y riesgo operativo
+
+Si estás por comprar o vender un vehículo vinculado a Luján, consultá multas pendientes antes de cerrar la operación. Las infracciones impagas pueden complicar transferencias, renovar documentación o generar costos no previstos.
+
+
+## Puntos a revisar antes de operar
+
+- Las multas pendientes pueden aparecer al transferir el vehículo
+- El comprador puede recibir una deuda que no estaba contemplada en el precio
+- Consultar la patente antes de firmar evita costos y demoras administrativas
+
+
+## Consulta web usada como referencia
+
+- **Ingresá el dominio:** Escribí la patente del vehículo en el buscador de Patente.ar, con formato viejo o Mercosur.
+- **Consulta por jurisdicción:** Patente.ar consulta las infracciones disponibles para Luján y las cruza con otras jurisdicciones integradas.
+- **Revisá el detalle:** Cuando hay actas disponibles, vas a ver fecha, motivo, estado, monto informado y organismo emisor.
+- **Usá el canal oficial:** Para pagar, pedir una liquidación o presentar descargo, seguí el canal oficial de Juzgado de Faltas Municipal de Luján.
+
 
 ## Flujo recomendado
 
@@ -67,6 +177,30 @@ La disponibilidad efectiva por API puede depender del contrato, la fuente activa
 - Jáuregui
 - Torres
 - Lezica y Torrezuri
+
+
+## Jurisdicciones cercanas o relacionadas
+
+- [Consultar multas en Almirante Brown por patente](https://patente.ar/multas-en-almirante-brown)
+- [Consultar multas en Avellaneda por patente](https://patente.ar/multas-en-avellaneda)
+- [Consultar multas en CABA por patente](https://patente.ar/multas-en-caba)
+- [Consultar multas en Lanús por patente](https://patente.ar/multas-en-lanus)
+- [Consultar multas en Lomas de Zamora por patente](https://patente.ar/multas-en-lomas-de-zamora)
+
+
+## Preguntas frecuentes para integradores
+
+### ¿Cómo consultar multas en Luján por patente?
+
+Ingresá el dominio en Patente.ar. Si la jurisdicción devuelve datos para Luján, vas a ver las infracciones disponibles y el organismo que interviene.
+
+### ¿Qué organismo gestiona las multas en Luján?
+
+Las actas municipales se canalizan por Juzgado de Faltas Municipal de Luján. Las infracciones de rutas o controles provinciales y nacionales pueden corresponder a otra autoridad.
+
+### ¿Puedo pagar multas de Luján online?
+
+Luján publica accesos oficiales a impuestos, tasas, estacionamiento e iTrámites. Si la infracción pertenece a rutas nacionales o provinciales, seguí el portal indicado por la autoridad emisora o SINAI.
 
 ## Probar Luján en Playground
 

@@ -8,7 +8,7 @@ permalink: /jurisdicciones/
 
 Este indice agrupa las 109 paginas dedicadas del repo publico [api-multas-transito-argentina](https://github.com/patente-ar/api-multas-transito-argentina) para consultas de multas por patente.
 
-Cada pagina resume como integrar `POST /v1/consultas` para una jurisdiccion y enlaza a la pagina publica correspondiente en patente.ar.
+Cada pagina resume como integrar `POST /v1/consultas` para una jurisdiccion y enlaza a la pagina publica correspondiente en patente.ar. El objetivo es que cada jurisdiccion tenga contexto local suficiente: organismo, pago, descargo, plazos, localidades y notas operativas cuando esos datos estan disponibles.
 
 ## Jurisdicciones
 
